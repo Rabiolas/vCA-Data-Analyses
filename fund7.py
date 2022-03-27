@@ -113,7 +113,7 @@ for name in list_of_vCAs[0]:
 
 
 results_folder = Path("results/") #folder location for final results  
-aggregated_df.to_csv(results_folder/'aggregated_test_190222.csv') #exports final results into a .csv file
+aggregated_df.to_csv(results_folder/'aggregated_deviation_analyses.csv') #exports final results into a .csv file
 #below a the list_mean_deviation_per_vCA is converted into a dataframe so it can be exported as a.csv
 deviation_summary_df = pd.DataFrame({'Name':list_mean_deviation_per_vCA[0], 'Deviation':list_mean_deviation_per_vCA[2] })
 deviation_summary_df.to_csv(results_folder/'deviation_summary.csv')
