@@ -1,34 +1,21 @@
-﻿Order,Filename,Abreviation,Name,,,,,
-1,viktorjager.csv,VJ,Viktor Jager,,,,,
-2,naveed.csv,NU,Naveed Urmani,,,,,
-3,dimitri777.csv,DF,Dimitri Fernando,,,,,
-4,glory.csv,GT,Glory Tshokama,,,,,
-5,joaoreis.csv,JR,Joao Reis,,,,,
-6,ashtonkase_Akawo_Omojo.csv,OA,Omojo Akawo,,,,,
-7,cryptotexty.csv,AV,Andrii Voloshyn,,,,,
-8,chalanh00.csv,CJ,Chalan Jeevandas,,,,,
-9,ductiger.csv,DT,Duc Tiger,,,,,
-10,kasimba.csv,JO,John Omolo,,,,,
-11,jeeshanhegde83.csv,JH,Jeeshan Hegde,,,,,
-12,nomis410.csv,SU,Simon Umbdenstock,,,,,
-13,g.didieco.csv,GDD,Giampiero Di Dieco,,,,,
-14,plamen5kov.csv,PP,Plamen Petkov,,,,,
-15,omreurmani.csv,OU,Omre Urmani,,,,,
-16,macko2michal2.csv,MiM,Michal Macko,,,,,
-17,alexandrurau.csv,AR,Alexandru Rau,,,,,
-18,vladimirp.csv,VP,Vladimir Pekic,,,,,
-19,lorenzdb.csv,LdB,Lorenz De Broe,,,,,
-20,eligiomorales.csv,EM,Eligio Morales,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
+﻿Order,Filename,Abreviation,Name
+1,viktorjager.csv,VJ,Viktor Jager
+2,naveed.csv,NU,Naveed Urmani
+3,dimitri777.csv,DF,Dimitri Fernando
+4,glory.csv,GT,Glory Tshokama
+5,joaoreis.csv,JR,Joao Reis
+6,ashtonkase_Akawo_Omojo.csv,OA,Omojo Akawo
+7,cryptotexty.csv,AV,Andrii Voloshyn
+8,chalanh00.csv,CJ,Chalan Jeevandas
+9,ductiger.csv,DT,Duc Tiger
+10,kasimba.csv,JO,John Omolo
+11,jeeshanhegde83.csv,JH,Jeeshan Hegde
+12,nomis410.csv,SU,Simon Umbdenstock
+13,g.didieco.csv,GDD,Giampiero Di Dieco
+14,plamen5kov.csv,PP,Plamen Petkov
+15,omreurmani.csv,OU,Omre Urmani
+16,macko2michal2.csv,MiM,Michal Macko
+17,alexandrurau.csv,AR,Alexandru Rau
+18,vladimirp.csv,VP,Vladimir Pekic
+19,lorenzdb.csv,LdB,Lorenz De Broe
+20,eligiomorales.csv,EM,Eligio Morales

@@ -70,7 +70,7 @@ does not match with the name of the vCA, so the currentely i am matching these m
 Order, vCA Name, vCA Abreviation and Filename.
 These manual steps could be removed by reading directly from the google sheet links provided in the aggregated file. This approach is being investigated
 """
-vca_folder = Path("individual_vCAs/") #folder location where vCA sheets were downloaded into  
+vca_folder = Path('individual_vCAs') #folder location where vCA sheets were downloaded into  
 filenames_df = pd.read_csv ('filenames.csv') #creating a dataframe from the filename.csv file created manually (see description above)
 filenames_df.set_index('Order',inplace=True,drop=True)
 
