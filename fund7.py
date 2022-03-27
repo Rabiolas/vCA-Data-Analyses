@@ -95,7 +95,7 @@ for name in list_of_vCAs[0]:
     
     #in this section i deal with transfering data from the individual_df (individual vCA data) into the aggregated_df
     vca_deviation = abreviation + ' deviation' 
-    aggregated_df[abreviation], aggregated_df[vca_deviation] = np.nan, np.nan
+    aggregated_df[vca_deviation] = np.nan
     
     #this second loop transfers the data from the individual dataframe into the aggregated dataframe
     for index, row in aggregated_df.iterrows():    
