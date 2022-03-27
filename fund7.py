@@ -27,8 +27,8 @@ def weighted_score (filtered, good, excellent, total):
     score as w_excell, w_good and w_filter respectevely (w stands for weight)
     """
     w_filter = 0
-    w_good = 1
-    w_excell = 3
+    w_good = 0.5
+    w_excell = 1
     return (((filtered/total)*w_filter)+((good/total)*w_good)+((excellent/total)*w_excell))
 
 #creates a new column in the aggregated dataframe with the weighted average score for each assessment using the weighted_score function
@@ -51,9 +51,9 @@ def merge_results (filtered, good, excellent):
     if filtered == 'x':
         return 0
     elif good == 'x':
-        return 1
+        return 0.5
     elif excellent == 'x':
-        return 3
+        return 1
     else:
         return np.nan
 
@@ -94,22 +94,20 @@ for name in list_of_vCAs[0]:
                                         merge_results(x['Filtered Out'], x['Good'], x['Excellent']), axis=1)
     
     #in this section i deal with transfering data from the individual_df (individual vCA data) into the aggregated_df
-    vca_deviation = abreviation + ' deviation'
-    vca_deviation_abs = abreviation + ' deviation abs' 
-    aggregated_df[abreviation], aggregated_df[vca_deviation], aggregated_df[vca_deviation_abs] = np.nan, np.nan, np.nan
+    vca_deviation = abreviation + ' deviation' 
+    aggregated_df[abreviation], aggregated_df[vca_deviation] = np.nan, np.nan
     
     #this second loop transfers the data from the individual dataframe into the aggregated dataframe
     for index, row in aggregated_df.iterrows():    
         #index = "id" column (the assessment id)
         if index in individual_df.index:
             aggregated_df.loc[index,name] = individual_df.loc[index, "Result"] 
-            aggregated_df.loc[index,vca_deviation] = individual_df.loc[index, "Result"] - aggregated_df.loc[index,"weighted av. score"]
-            aggregated_df.loc[index,vca_deviation_abs] = abs(individual_df.loc[index, "Result"] - aggregated_df.loc[index,"weighted av. score"])
+            aggregated_df.loc[index,vca_deviation] = abs(individual_df.loc[index, "Result"] - aggregated_df.loc[index,"weighted av. score"])
         else:
             aggregated_df.loc[index,name] = np.nan
     
 
-    list_mean_deviation_per_vCA[2].append(aggregated_df[vca_deviation_abs].mean())
+    list_mean_deviation_per_vCA[2].append(aggregated_df[vca_deviation].mean())
 
 
 results_folder = Path("results/") #folder location for final results  
