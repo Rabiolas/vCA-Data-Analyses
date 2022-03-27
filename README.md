@@ -16,5 +16,5 @@ The script will output 4 .csv sheets:
 2. A table with the average deviation calculated for each vCA - 'deviation_summary.csv'
 3. The deviation of each vCA grouped by Assessor_ID - "by_assessor.csv"
 4. The deviation of each vCA grouped by Idea - "by_idea.csv"
-5. 
-Currently I am still creating all plots "manually" from Excell. The plan was to use a package like Matplotlib to generate plots automatically, but haven’t had time to implement this as of yet.                                                                                                                              
+
+Graphs and Plots - Currently I am still creating all plots "manually" from Excell. The plan was to use a package like Matplotlib to generate plots automatically, but haven’t had time to implement this as of yet.    
